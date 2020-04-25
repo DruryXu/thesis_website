@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Modern Business - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<script type="text/javascript">
+    function Yes(index) {
+        var myForm = document.createElement("form");
+        var myinput = document.createElement("input");
+        myForm.method = "post";
+        myinput.setAttribute("name", "number")
+        myinput.setAttribute("value", index);
+        myForm.appendChild(myinput);
+        document.body.appendChild(myForm);
+        myForm.submit();
+        document.body.removeChild(myForm);
+    }
+</script>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">动漫推荐系统</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" onclick='location.href = ("update")'>更新</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('/static/pic/doraemon.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>{{ names.0 }}</h3>
+            <p>日本漫画家藤本弘（笔名藤子·F·不二雄）创作的漫画。</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('/static/pic/conan.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>{{ names.1 }}</h3>
+            <p>讲述了主人公江户川柯南以天生的推理能力对抗神秘组织，并与同伴一起解决无数案件的故事</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('/static/pic/snoopy.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>{{ names.2 }}</h3>
+            <p>它是一只在雏菊山小狗农庄出生的小猎犬，拥有7个兄弟姐妹，最早被一位名叫里拉的小女孩所收养</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Welcome to Xu's Recommender System</h1>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">{{ names.3 }}</h4>
+          <div class="card-body">
+            <p class="card-text">《我们仍未知道那天所看见的花的名字。》是一部用直达内心的笔触描写青春期的少男少女在面对恋情、友情、纠葛时，有欢欣笑容也有伤心泪水的青春原创动画片。</p>
+          </div>
+          <div class="card-footer">
+            <a onclick="location.href = ('/single/3')" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">{{ names.4 }}</h4>
+          <div class="card-body">
+            <p class="card-text">天才兼疯子科学家Rick在失踪多年后突然回到女儿Beth的身边，并且在她的车库里搞了一个科学实验室。Rick有一把“传送门枪”，可以穿越到宇宙的各个次元。孙子Morty莫名其妙就成了他的助手，经常被拖进他的自制太空船内，跟他一同开展各种疯狂刺激的宇宙冒险。女儿和女婿Jerry对他的疯狂行为感到不满，却又对这个天才科学家无可奈何。</p>
+          </div>
+          <div class="card-footer">
+            <a onclick="location.href = ('/single/4')" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">{{ names.5 }}</h4>
+          <div class="card-body">
+            <p class="card-text">该作品根据大友克洋的原作漫画改编，讲述未来的日本东京，军方一直在秘密进行的“阿基拉”项目导致巨大灾难的故事</p>
+          </div>
+          <div class="card-footer">
+            <a onclick="location.href = ('/single/5')" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Section -->
+    <h2>More Animes</h2>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/pic/FA.jpeg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">{{ names.6 }}</a>
+            </h4>
+            <p class="card-text">故事发生在一个炼金术相当发达的世界，在这个世界的“炼金术”，是以理解物质的内在的法则：理解，分解，再构造成立，进行炼金术必须按照“等价交换”法则：为了获得某种东西，需要以同等的代价交换，代价不够的话便需要以自己的任何部份（身体的一部分、记忆等等）被作为代价的填补而被拿走。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/pic/qian.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">{{ names.7 }}</a>
+            </h4>
+            <p class="card-text">10岁的少女千寻与父母一起从都市搬家到了乡下。没想到在搬家的途中，一家人发生了意外。他们进入了汤屋老板魔女控制的奇特世界——在那里不劳动的人将会被变成动物。千寻的爸爸妈妈因贪吃变成了猪，千寻为了救爸爸妈妈经历了很多磨难，在期间她遇见了白龙，一个既聪明又冷酷的少年，在经历了很多事情之后，千寻最后救出了爸爸妈妈，拯救了白龙。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/pic/xia.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">{{ names.8 }}</a>
+            </h4>
+            <p class="card-text">故事讲述了夏目贵志从外祖母夏目玲子的遗物中得到了那些由契约书所做成的“友人帐”，他决定将友人帐中妖怪们的名字一一归还。在夏目身边，开始聚集起各种各样的妖怪们。能看到妖怪的少年夏目贵志，与招财猫外表的妖怪斑一起，为大家讲述一个个奇异、悲伤、怀念、令人感动的温馨故事。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src='/static/vendor/jquery/jquery.min.js'></script>
+  <script src='/static/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
+	</head>
+
+    <script type="text/javascript">
+        function Yes() {
+            var myForm = document.createElement("form");
+            var myinput = document.createElement("input");
+            myForm.method = "post";
+            myinput.setAttribute("name", "clicked")
+            myinput.setAttribute("value", "yes");
+            myForm.appendChild(myinput);
+            document.body.appendChild(myForm);
+            myForm.submit();
+            document.body.removeChild(myForm);
+        }
+        function No() {
+            var myForm = document.createElement("form");
+            var myinput = document.createElement("input");
+            myForm.method = "post";
+            myinput.setAttribute("name", "clicked")
+            myinput.setAttribute("value", "no");
+            myForm.appendChild(myinput);
+            document.body.appendChild(myForm);
+            myForm.submit();
+            document.body.removeChild(myForm);
+        }
+    </script>
+
+	<body class="landing">
+{#        #}
+{#		<!-- Page Wrapper -->#}
+{#		<div id="page-wrapper">#}
+{#			<!-- Banner -->#}
+			<section id="banner">
+				<div class="inner" style="top:50px; left:450px; position: absolute">
+					<h2>Questionaire</h2>
+
+                    <ul class="actions">
+                        <p>You {{ feedback.0 }} {{ genres.0.genre }}</p>
+                        <p>You {{ feedback.1 }} {{ genres.1.genre }}</p>
+                        <p>You {{ feedback.2 }} {{ genres.2.genre }}</p>
+                        <p>You {{ feedback.3 }} {{ genres.3.genre }}</p>
+                        <p>You {{ feedback.4 }} {{ genres.4.genre }}</p>
+                        <li><a onclick='location.href = ("/recsys")' class="button special">Continue</a></li>
+                    </ul>
+                </div>
+
+{#                </div>#}
+<!--						<a href="#one" class="more scrolly">Learn More</a>-->
+			</section>
+{#		</div>#}
+
+		<!-- Scripts -->
+		<script src="/static/assets/js/jquery.min.js"></script>
+		<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+		<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+		<script src="/static/assets/js/skel.min.js"></script>
+		<script src="/static/assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="/static/assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
